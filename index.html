@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Club do Recife - O Leão da Ilha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FF0000 0%, #8B0000 100%);
+        }
+        
+        .sport-red {
+            background-color: #FF0000;
+        }
+        
+        .sport-black {
+            background-color: #000000;
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .stadium-pattern {
+            background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header/Navigation -->
+    <header class="sport-red text-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden">
+                        <!-- Logo -->
+                        <img src="https://sportrecife.com.br/wp-content/uploads/2024/06/B151VsT-_400x400.jpg" 
+                             alt="PST logo" 
+                             class="object-contain w-full h-full" />
+                    </div>
+                    <h1 class="text-2xl font-bold">SPORT RECIFE</h1>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-gray-200 transition-colors">Início</a>
+                    <a href="#history" class="hover:text-gray-200 transition-colors">História</a>
+                    <a href="#titles" class="hover:text-gray-200 transition-colors">Títulos</a>
+                    <a href="#team" class="hover:text-gray-200 transition-colors">Elenco</a>
+                    <a href="#stadium" class="hover:text-gray-200 transition-colors">Estádio</a>
+                </div>
+                
+                <button class="md:hidden text-2xl">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-24 pb-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Escudo oficial -->
+                <img src="https://pbs.twimg.com/profile_images/1752546556325011456/1XcK8hjA_400x400.jpg" 
+                     alt="Escudo oficial do Sport Club do Recife" 
+                     class="mx-auto w-48 h-48 rounded-full border-4 border-white shadow-2xl mb-8 object-cover" />
+                
+                <h2 class="text-5xl md:text-6xl font-bold mb-6">SPORT CLUB DO RECIFE</h2>
+                <p class="text-xl md:text-2xl mb-8">O Leão da Ilha do Retiro</p>
+                <div class="flex justify-center space-x-4">
+                    <!-- Botão Próximo Jogo -->
+                    <a href="https://ge.globo.com/pe/futebol/times/sport/agenda/#/proximos-jogos" 
+                       target="_blank"
+                       class="bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors">
+                        PRÓXIMO JOGO
+                    </a>
+                    <!-- Botão Torcedor -->
+                    <a href="https://sport.eleventickets.com/#!/home" 
+                       target="_blank"
+                       class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-red-600 transition-colors">
+                        TORCEDOR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section id="history" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">NOSSA HISTÓRIA</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://sportrecife.com.br/wp-content/webp-express/webp-images/uploads/2024/06/image11-1024x573.jpg.webp" alt="Foto histórica do Sport Recife de 1905" class="rounded-lg shadow-xl w-full" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">Desde 1905</h3>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Fundado em 13 de maio de 1905, o Sport Club do Recife é um dos clubes mais tradicionais do futebol brasileiro.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        Com sede na Ilha do Retiro, o Sport já conquistou títulos importantes e revelou grandes jogadores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titles" class="py-20 sport-red text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">NOSSAS CONQUISTAS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-black bg-opacity-20 rounded-lg hover-scale">
+                    <div class="text-5xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">CAMPEÃO BRASILEIRO</h3>
+                    <p class="text-gray-200">1987</p>
+                </div>
+                
+                <div class="text-center p-6 bg-black bg-opacity-20 rounded-lg hover-scale">
+                    <div class="text-5xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">COPA DO BRASIL</h3>
+                    <p class="text-gray-200">2008</p>
+                </div>
+                
+                <div class="text-center p-6 bg-black bg-opacity-20 rounded-lg hover-scale">
+                    <div class="text-5xl font-bold mb-4">44</div>
+                    <h3 class="text-xl font-bold mb-2">CAMPEONATO PERNAMBUCANO</h3>
+                    <p class="text-gray-200">Recordista estadual</p>
+                </div>
+                
+                <div class="text-center p-6 bg-black bg-opacity-20 rounded-lg hover-scale">
+                    <div class="text-5xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2">COPA DO NORDESTE</h3>
+                    <p class="text-gray-200">1994, 2000 e 2014</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elenco -->
+    <section id="team" class="py-10">
+      <h2 class="text-2xl font-bold text-center mb-6">ELENCO ATUAL</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+        <!-- Jogador 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://cdn-img.zerozero.pt/img/jogadores/new/95/10/139510_gabriel_vasconcelos_20250702173936.png" alt="Gabriel" class="w-full h-56 object-cover object-top">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-red-600">Gabriel</h3>
+            <p class="text-gray-600">Goleiro • Camisa 1</p>
+            <p class="text-sm text-gray-500 mt-2">Idade: 32 anos • Altura: 1.88m</p>
+          </div>
+        </div>
+        <!-- Jogador 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://cdn-img.zerozero.pt/img/jogadores/new/06/67/250667_lucas_lima_20250404200131.png" alt="Lucas Lima" class="w-full h-56 object-cover object-top">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-red-600">Lucas Lima</h3>
+            <p class="text-gray-600">Meia • Camisa 10</p>
+            <p class="text-sm text-gray-500 mt-2">Idade: 35 anos • Altura: 1.75m</p>
+          </div>
+        </div>
+        <!-- Jogador 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://cdn-img.zerozero.pt/img/jogadores/new/24/16/742416_derik_lacerda_20250723194548.png" alt="Derik Lacerda" class="w-full h-56 object-cover object-top">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-red-600">Derik Lacerda</h3>
+            <p class="text-gray-600">Atacante • Camisa 9</p>
+            <p class="text-sm text-gray-500 mt-2">Idade: 25 anos • Altura: 1.90m</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estádio -->
+    <section id="stadium" class="py-20 stadium-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">ILHA DO RETIRO</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2023/03/ilha.jpg" alt="Estádio Ilha do Retiro" class="rounded-lg shadow-xl w-full" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">Estádio Adelmar da Costa Carvalho</h3>
+                    <p class="text-gray-700 text-lg mb-6">Inaugurado em 1937, capacidade para mais de 30 mil torcedores.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-red-600 text-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold">32.983</div>
+                            <div class="text-sm">Capacidade</div>
+                        </div>
+                        <div class="bg-black text-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold">1937</div>
+                            <div class="text-sm">Inauguração</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Novidades -->
+    <section class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">NOVIDADES DO LEÃO</h2>
+            
+            <div class="max-w-3xl mx-auto bg-gray-900 rounded-xl p-8 shadow-lg">
+                <p class="text-lg leading-relaxed mb-6">
+                    Aqui você pode acompanhar as últimas notícias, novidades e informações exclusivas sobre o Sport Club do Recife e a Nação Rubro-Negra.
+                </p>
+                <a href="https://sportrecife.com.br/categoria/blog/" target="_blank" 
+                   class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-bold transition-colors inline-block">
+                    VER NOVIDADES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sport-black text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-xl font-bold mb-4">Vinicius Franco Developer</h3>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.instagram.com/viniicius.franco/?hl=en" target="_blank" class="hover:text-red-400">Instagram</a>
+                <a href="https://github.com/ViniciusFrancoS" target="_blank" class="hover:text-red-400">GitHub</a>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p>© 2024 Sport Club do Recife | Desenvolvido por Vinicius Franco</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f8f8;
+}
+.hero-gradient {
+  background: linear-gradient(135deg, #FF0000 0%, #8B0000 100%);
+}
+.sport-red {
+  background-color: #FF0000;
+}
+.sport-black {
+  background-color: #000000;
+}
