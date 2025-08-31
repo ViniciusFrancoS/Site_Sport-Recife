@@ -5,5 +5,7 @@ Projeto desenvolvido para o Sport Club do Recife, com informações sobre o time
 ## Estrutura do Projeto
 - `index.html`: A página principal do projeto
 - `css/style.css`: Estilos da página
-- `js/script.js`: Scripts JavaScript (se necessário)
+- `js/script.js`: Scripts JavaScript
 - `img/`: Imagens do projeto
+
+atualizerei em breve todas as pastas!!
